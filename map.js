@@ -1,10 +1,10 @@
 function map(elements, cb) {
-    const newArr=[]
+    const mappedArray=[]
   for(let index=0;index<elements.length;index++)
   {
-    newArr.push(cb(elements[index]))
+    mappedArray.push(cb(elements[index]))
   }
-return newArr;
+return mappedArray;
 }
 
 module.exports = map;

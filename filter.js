@@ -1,10 +1,10 @@
 function filter(elements, cb) {
-  let newArr = [];
+  let filteredArray = [];
   for (let index = 0; index < elements.length; index++) {
     if (cb(elements[index])) {
-      newArr.push(elements[index]);
+      filteredArray.push(elements[index]);
     }
   }
-  return newArr;
+  return filteredArray;
 }
 module.exports = filter;

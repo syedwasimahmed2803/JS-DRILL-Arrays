@@ -1,14 +1,14 @@
 function flatten(elements) {
-   let newArr = [];
+   let flattenedArray = [];
    for(let index=0;index<elements.length;index++){
     if(Array.isArray(elements[index])){
-        newArr=newArr.concat(flatten(elements[index]))
+        flattenedArray=flattenedArray.concat(flatten(elements[index]))
     }
     else{
-        newArr.push(elements[index])
+        flattenedArray.push(elements[index])
     }
    }
-   return newArr;
+   return flattenedArray;
 }
 
 module.exports = flatten;
