@@ -1,0 +1,6 @@
+const filter = require("../filter")
+const {items} = require("../testArray")
+const isEqualToFIve = filter(items, (item)=> item ===5)
+  console.log(isEqualToFIve)
+const character = filter(items, (item)=> item == "John")
+  console.log(character)  

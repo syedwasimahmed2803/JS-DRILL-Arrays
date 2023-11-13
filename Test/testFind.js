@@ -1,0 +1,6 @@
+const find = require("../find")
+const {items} = require("../testArray")
+const greaterThan3 = find(items, (item)=> item >3)
+  console.log(greaterThan3)
+const character = find(items, (item)=> item == "John")
+  console.log(character)  
